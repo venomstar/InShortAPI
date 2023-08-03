@@ -6,7 +6,6 @@ const getNews = require("./inShort");
 
 app.use(cors());
 
-
 app.get("/api/:id",async (req,res)=>{
   try{
   const {id} =  req.params;  
@@ -18,7 +17,6 @@ app.get("/api/:id",async (req,res)=>{
 
   }
 })
-
 
 app.listen(port,()=>{
   console.log(`Server is running on ${port}`);
